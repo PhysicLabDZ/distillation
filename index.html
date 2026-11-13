@@ -17,6 +17,7 @@ canvas{width:100%;height:100%;display:block;transform-origin:0 0}
 .b.amb{color:#ffd86b;box-shadow:0 .5cqw 1.4cqw rgba(0,0,0,.5),inset 0 .22cqw .3cqw rgba(255,255,255,.6),0 0 1.4cqw rgba(255,210,80,.45)}
 .b.off{opacity:.55}
 .bd{position:absolute;right:.5cqw;bottom:.3cqw;font:700 1.25cqw/1 Arial;color:#caffbf;text-shadow:0 0 .5cqw #3f3}
+#sig{position:absolute;left:55%;bottom:1.4cqw;transform:translateX(-50%);font:700 1.9cqw/1 system-ui,"Segoe UI",Arial,sans-serif;letter-spacing:.12cqw;direction:ltr;color:rgba(255,255,255,.55);text-shadow:0 .1cqw .3cqw rgba(0,0,0,.6);pointer-events:none;user-select:none;-webkit-user-select:none}
 </style></head><body>
 <div id="stage"><canvas id="c"></canvas>
 <div id="ui">
@@ -27,7 +28,7 @@ canvas{width:100%;height:100%;display:block;transform-origin:0 0}
 <button class="b" id="sn" title="الصوت"><svg viewBox="0 0 24 24" stroke-width="0"><path d="M4 9v6h4l5 4V5L8 9z"/><path id="snw" d="M16 8.5a5 5 0 0 1 0 7M18.5 6a8.5 8.5 0 0 1 0 12" fill="none" stroke-width="2" stroke-linecap="round"/></svg></button>
 <button class="b" id="lb" title="التسميات"><svg viewBox="0 0 24 24" stroke-width="0"><path d="M3 12.5V4h8.5L21 13.500 13.500 21z"/><circle cx="7.500" cy="8.500" r="1.600" fill="#06231a"/></svg></button>
 <button class="b" id="lz" title="العدسة المكبرة"><svg viewBox="0 0 24 24" stroke-width="0"><circle cx="10.5" cy="10.5" r="6.2" fill="none" stroke-width="2.4"/><path d="M15.3 15.3L21 21" stroke-width="3" stroke-linecap="round"/><path d="M8 10.5h5M10.5 8v5" stroke-width="1.6" stroke-linecap="round"/></svg></button>
-</div></div>
+</div><div id="sig">PhysicLabDZ</div></div>
 <script>
 const $=id=>document.getElementById(id),cv=$('c');cv.width=1672;cv.height=941;const g=cv.getContext('2d');
 const rnd=(a,b)=>a+Math.random()*(b-a),clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
