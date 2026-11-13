@@ -1,5 +1,5 @@
 /* PhysicLabDZ – distillation: offline-first service worker (v20) */
-const CACHE = 'distillation-v20';
+const CACHE = 'distillation-v21';
 const REQUIRED = ['./', 'index.html'];
 const OPTIONAL = ['manifest.json', 'icon.svg', 'icon-192.png', 'icon-512.png'];
 
